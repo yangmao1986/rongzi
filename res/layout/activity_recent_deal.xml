@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" 
+    android:background="#ffffff"
+    >
+
+   
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:background="#FF8500"
+>
+
+            <ImageButton
+                android:id="@+id/about_us_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"              
+                android:background="@drawable/back_button_selector"
+                android:onClick="ture"
+                android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/DIMEN_10PX"
+                />
+
+
+      
+
+            <TextView
+                android:id="@+id/tv_logo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最近交易"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/DIMEN_38PX"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                 />
+       
+
+   
+    </RelativeLayout>
+    
+    
+    <com.rongdai.utils.XListView
+        android:id="@+id/xListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:cacheColorHint="#00000000">
+    </com.rongdai.utils.XListView>
+    
+    
+</LinearLayout>

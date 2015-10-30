@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:background="#FF8500"
+            android:button="@null"
+            android:text="客服选择"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/DIMEN_36PX" />
+
+        <ImageView
+            android:id="@+id/financingservice_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/DIMEN_10PX"
+            android:src="@drawable/login_back_bg" />
+    </RelativeLayout>
+
+</LinearLayout>

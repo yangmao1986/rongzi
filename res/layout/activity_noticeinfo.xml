@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noticeInfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7" >
+
+    <com.rongdai.view.PullToRefreshView
+        android:id="@+id/ptrv"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/loading_page_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:fillViewport="true"
+            android:focusable="true" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/noticeinfo_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/DIMEN_20PX"
+                        android:text=""
+                        android:textSize="@dimen/DIMEN_42PX" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/DIMEN_20PX"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/DIMEN_20PX"
+                            android:layout_marginRight="@dimen/DIMEN_20PX"
+                            android:background="@drawable/label"
+                            android:text="标签"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/DIMEN_24PX" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/DIMEN_10PX"
+                            android:text="融投贷"
+                            android:textColor="#808080"
+                            android:textSize="@dimen/DIMEN_24PX" />
+
+                        <TextView
+                            android:id="@+id/newsKeyWords"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/DIMEN_10PX"
+                            android:text=""
+                            android:textColor="#808080"
+                            android:textSize="@dimen/DIMEN_24PX" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/noticeinfo_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/DIMEN_20PX"
+                        android:text="2015-01-04 21:33:99" />
+
+                    <TextView
+                        android:paddingLeft="15dp"
+                        android:paddingRight="12dp"
+                        android:id="@+id/noticeinfo_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="@dimen/DIMEN_4PX"
+                        android:text=""
+                        android:textColor="#303030"
+                        android:textSize="@dimen/DIMEN_32PX" />
+
+                    <TextView
+                        android:id="@+id/resouce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/DIMEN_50PX"
+                        android:layout_marginLeft="@dimen/DIMEN_80PX"
+                        android:layout_marginTop="@dimen/DIMEN_30PX"
+                        android:text=""
+                        android:textColor="#1f1f1f"
+                        android:textSize="@dimen/DIMEN_28PX" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/DIMEN_50PX"
+                        android:layout_marginLeft="@dimen/DIMEN_20PX"
+                        android:text="精彩评论"
+                        android:textColor="#888888"
+                        android:textSize="@dimen/DIMEN_32PX" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_evaluation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/top"
+                    android:layout_marginLeft="@dimen/DIMEN_30PX"
+                    android:layout_marginRight="@dimen/DIMEN_10PX"
+                    android:dividerHeight="0dp" >
+                </ListView>
+
+                <LinearLayout
+                    android:id="@+id/evaluation_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/DIMEN_110PX"
+                    android:layout_below="@id/lv_evaluation"
+                    android:background="#ffffff"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/noiticeinfo_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/noticeinfo_back_bg"
+                            android:button="@null" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:singleLine="true"
+                        android:imeOptions="actionSend"
+                        android:id="@+id/noticeinfo_say"
+                        android:layout_width="@dimen/DIMEN_382PX"
+                        android:layout_height="@dimen/DIMEN_56PX"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/inputbox"
+                        android:gravity="center_vertical"
+                        android:hint="我来说两句"
+                        android:textColor="#888888"
+                        android:textSize="@dimen/DIMEN_32PX" />
+
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <ImageButton
+                            android:id="@+id/noticeinfo_share"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/noticeinfo_share_bg"
+                            android:button="@null" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+    </com.rongdai.view.PullToRefreshView>
+
+    <include layout="@layout/loading_page_empty" />
+
+    <include layout="@layout/loading_page_error" />
+
+    <include layout="@layout/loading_page_loading" />
+
+</FrameLayout>

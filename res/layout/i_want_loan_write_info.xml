@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/write_info_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/loan_info_ll" >
+
+                <ImageView style="@style/loan_info_must_write" />
+
+                <TextView
+                    style="@style/loan_info"
+                    android:text="@string/lxr" />
+
+                <EditText
+                    android:id="@+id/write_info_name"
+                    style="@style/loan_info_user_write"
+                    android:hint="请输入联系人姓名" />
+            </LinearLayout>
+
+            <View style="@style/loan_info_line" />
+
+            <LinearLayout style="@style/loan_info_ll" >
+
+                <ImageView style="@style/loan_info_must_write" />
+
+                <TextView
+                    style="@style/loan_info"
+                    android:text="@string/sjh" />
+
+                <EditText
+                    android:id="@+id/write_info_phone"
+                    style="@style/loan_info_user_write"
+                    android:hint="请输入您的手机号"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <View style="@style/loan_info_line" />
+
+            <LinearLayout style="@style/loan_info_ll" >
+
+                <TextView
+                    style="@style/loan_info"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/yx" />
+
+                <EditText
+                    android:id="@+id/write_info_email"
+                    style="@style/loan_info_user_write"
+                    android:hint="请输您的入邮箱" />
+            </LinearLayout>
+
+            <View style="@style/loan_info_line" />
+
+            <LinearLayout style="@style/loan_info_ll" >
+
+                <ImageView style="@style/loan_info_must_write" />
+
+                <TextView
+                    style="@style/loan_info"
+                    android:text="@string/hj" />
+
+                <EditText
+                    android:id="@+id/write_info_huji"
+                    style="@style/loan_info_user_write"
+                    android:hint="请输入您的户籍" />
+            </LinearLayout>
+
+            <View style="@style/loan_info_line" />
+
+            <LinearLayout style="@style/loan_info_ll" >
+
+                <ImageView style="@style/loan_info_must_write" />
+
+                <TextView
+                    style="@style/loan_info"
+                    android:text="@string/xjd" />
+
+                <EditText
+                    android:id="@+id/write_info_local"
+                    style="@style/loan_info_user_write"
+                    android:hint="请输入您的现居地" />
+            </LinearLayout>
+
+            <View style="@style/loan_info_line" />
+
+            <LinearLayout style="@style/loan_info_ll" >
+
+                <ImageView style="@style/loan_info_must_write" />
+
+                <TextView
+                    style="@style/loan_info"
+                    android:text="@string/qymc" />
+
+                <EditText
+                    android:id="@+id/write_info_company"
+                    style="@style/loan_info_user_write"
+                    android:hint="请输入企业名称" />
+            </LinearLayout>
+
+            <View style="@style/loan_info_line" />
+
+            <LinearLayout style="@style/loan_info_ll" >
+
+                <TextView
+                    style="@style/loan_info"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/dbw" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        style="@style/loan_info_radiobutton"
+                        android:layout_marginLeft="10dp"
+                        android:text="无" />
+
+                    <RadioButton
+                        style="@style/loan_info_radiobutton"
+                        android:layout_marginLeft="15dp"
+                        android:text="有" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View style="@style/loan_info_line" />
+
+            <LinearLayout style="@style/loan_info_ll" >
+
+                <TextView
+                    style="@style/loan_info"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/dbr" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        style="@style/loan_info_radiobutton"
+                        android:layout_marginLeft="10dp"
+                        android:text="无" />
+
+                    <RadioButton
+                        style="@style/loan_info_radiobutton"
+                        android:layout_marginLeft="15dp"
+                        android:text="有" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <View style="@style/loan_info_line" />
+
+            <LinearLayout style="@style/loan_info_ll" >
+
+                <ImageView style="@style/loan_info_must_write" />
+
+                <TextView
+                    style="@style/loan_info"
+                    android:text="@string/yxrzje" />
+
+                <EditText
+                    android:id="@+id/write_info_money"
+                    style="@style/loan_info_user_write"
+                    android:layout_weight="5"
+                    android:hint="请输入投资金额"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" >
+
+                    <TextView
+                        style="@style/loan_info"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/DIMEN_22PX"
+                        android:text="万元" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/loan_info_line" />
+
+            <LinearLayout style="@style/loan_info_ll" >
+
+                <ImageView style="@style/loan_info_must_write" />
+
+                <TextView
+                    style="@style/loan_info"
+                    android:text="@string/yqrzqx" />
+
+                <EditText
+                    android:id="@+id/write_info_time"
+                    style="@style/loan_info_user_write"
+                    android:layout_weight="3"
+                    android:hint="请输入融资期限"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        style="@style/loan_info"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/DIMEN_22PX"
+                        android:text="月" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View style="@style/loan_info_line" />
+
+            <LinearLayout style="@style/loan_info_ll" >
+
+                <ImageView
+                    android:layout_width="@dimen/DIMEN_18PX"
+                    android:layout_height="@dimen/DIMEN_18PX"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/must_write" />
+
+                <TextView
+                    style="@style/loan_info"
+                    android:text="@string/bzsm" />
+
+                <EditText
+                    android:id="@+id/write_info_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="top|left"
+                    android:hint="如有其他需求应填写备注说明"
+                    android:inputType="textMultiLine"
+                    android:maxLines="7"
+                    android:minLines="5"
+                    android:singleLine="false"
+                    android:textColor="@color/loan_title"
+                    android:textSize="34px" />
+            </LinearLayout>
+
+            <View style="@style/loan_info_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_22PX"
+                    android:padding="5dp"
+                    android:text="“"
+                    android:textColor="@color/want_loan"
+                    android:textSize="24px" />
+
+                <ImageView style="@style/loan_info_must_write" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="”"
+                    android:textColor="@color/want_loan"
+                    android:textSize="24px" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="为必填信息"
+                    android:textColor="@color/want_loan"
+                    android:textSize="@dimen/DIMEN_24PX" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/write_info_commit"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/write_info_commit_selector"
+                    android:text="提交"
+                    android:textSize="@dimen/DIMEN_34PX" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

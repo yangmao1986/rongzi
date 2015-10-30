@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rongdai.view.PullToRefreshView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/pull_refresh_view"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ListView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="10dp"
+        android:background="@color/white"
+        android:id="@+id/want_loan_lv"
+        ></ListView>
+
+</com.rongdai.view.PullToRefreshView>

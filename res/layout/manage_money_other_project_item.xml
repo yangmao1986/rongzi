@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.rongdai"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/DIMEN_22PX"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/other_project_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="融影宝"
+                android:textColor="@color/biao_money"
+                android:textSize="@dimen/DIMEN_32PX" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/other_project_rl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_30PX"
+                android:layout_height="@dimen/DIMEN_30PX"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/DIMEN_22PX"
+                android:background="@android:color/transparent"
+                android:src="@drawable/xiangyoujiant" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@drawable/fenggexian" />
+
+</LinearLayout>

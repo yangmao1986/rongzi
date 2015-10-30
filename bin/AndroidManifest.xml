@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rongdai"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="15" />
+
+    <permission
+        android:name="com.rongdai.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.rongdai.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 添加可以向外拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+        
+        
+    
+        
+    </uses-permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- shareSDK分享权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_luache"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name=".SplishActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" >
+        </activity>
+        <activity android:name=".iwantloan.pager.WriteLoanInfo" >
+        </activity>
+        <activity android:name=".managemoney.pager.DirectionRaise" >
+        </activity>
+        <activity android:name=".base.BaseActivity" >
+        </activity>
+        <activity
+            android:name=".activity.NoticConsult.NoticeInfo"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity android:name=".managemoney.pager.ProjectDetail" >
+        </activity>
+        <activity android:name=".managemoney.pager.ConfirmTender" >
+        </activity>
+        <activity android:name=".activity.personalcenter.LoginActivity" >
+        </activity>
+        <activity android:name=".activity.personalcenter.RegistActivity" >
+        </activity>
+        <activity android:name=".activity.personalcenter.ForgetPswActivity" >
+        </activity>
+        <activity android:name=".activity.personalcenter.VerificationActivity" >
+        </activity>
+        <activity android:name=".activity.personalcenter.SetNewPswActivity" >
+        </activity>
+        <activity android:name=".activity.personalcenter.CustomServiceActivity" >
+        </activity>
+        <activity android:name=".activity.personalcenter.FinancingserviceActivity" >
+        </activity>
+        <activity android:name=".activity.personalcenter.LoanserviceActivity" >
+        </activity>
+        <activity android:name=".activity.personalcenter.InputHandPasswordActivity" >
+        </activity>
+        <activity android:name=".activity.personalcenter.SetHandPasswordActivity" >
+        </activity>
+        <activity android:name=".activity.personalcenter.OpenActivity" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.FeedBackActivity"
+            android:label="@string/title_activity_feed_back" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.AboutUsActivity"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name=".SecurityCenterActivity"
+            android:label="@string/title_activity_security_center" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.RealNameCertificationActivity"
+            android:label="@string/title_activity_real_name_certification" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.BindingPhoneNumberActivity"
+            android:label="@string/title_activity_binding_phone_number" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.MyBankCardActivity"
+            android:label="@string/title_activity_my_bank_card" >
+        </activity>
+        <activity
+            android:name=".EditPasswordActivity"
+            android:label="@string/title_activity_edit_password" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.MyUserActivity"
+            android:label="@string/title_activity_my_user" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.PaySuccessActivity"
+            android:label="@string/title_activity_pay_success" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.SpeedPayActivity"
+            android:label="@string/title_activity_speed_pay" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.PayDetailedActivity"
+            android:label="@string/title_activity_pay_detailed" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.PayActivity"
+            android:label="@string/title_activity_pay" >
+        </activity>
+        <activity
+            android:name=".SetPhotoActivity"
+            android:label="@string/title_activity_set_photo" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.EditPasswordActivity"
+            android:label="@string/title_activity_edit_password" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.SecurityCenterActivity"
+            android:label="@string/title_activity_security_center" >
+        </activity>
+        <activity android:name=".activity.personalcenter.CertificateHuiFu" >
+        </activity>
+        <activity android:name=".activity.personalcenter.RegistAgreementActivity" >
+        </activity>
+        <activity android:name=".activity.personalcenter.NotUsedRedActivity" >
+        </activity>
+        <!-- Begin Rong Cloud -->
+
+        <activity
+            android:name="io.rong.imkit.RongActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.rongdai"
+                    android:pathPrefix="/conversationsetting/"
+                    android:scheme="rong" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.rongdai"
+                    android:path="/grouplist"
+                    android:scheme="rong" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.rongdai"
+                    android:path="/conversationgrouplist"
+                    android:scheme="rong" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.rongdai"
+                    android:pathPrefix="/friend/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.imkit.RongSingleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.rongdai"
+                    android:path="/conversationlist"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.imkit.RongSecActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.rongdai"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.rong.voipkit.activity.CallSideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="io.rong.voipkit.activity.CalledSideActivity"
+            android:excludeFromRecents="true"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="io.rong.voipkit.calledSideActivity.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.rongdai"
+                    android:path="/calledsideactivity"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".calculator.FloatWindowService" >
+        </service>
+        <service
+            android:name="io.rong.imkit.service.RongIMService"
+            android:enabled="true"
+            android:exported="false"
+            android:priority="1000" >
+        </service>
+        <service
+            android:name="io.rong.imlib.PushService"
+            android:process="io.rong.push.service" />
+        <service android:name="io.rong.imlib.RongService" />
+        <service android:name=".calculator.FloatWindowService" >
+        </service>
+
+        <receiver
+            android:name="io.rong.imlib.PushReceiver"
+            android:process="io.rong.push.service" >
+            <intent-filter>
+                <action android:name="io.rong.imlib.action.push.heartbeat" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!-- End Rong Cloud -->
+        <activity
+            android:name=".activity.personalcenter.GetMoneyInfoActivity"
+            android:label="@string/title_activity_get_money_info" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.GetMoneyActivity"
+            android:label="@string/title_activity_get_money" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.MyRedEnvelopeActivity"
+            android:label="@string/title_activity_my_red_envelope" >
+        </activity>
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.rongdai" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <!-- Required SDK 核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000" >
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.rongdai" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="2f3b8aa3d4d538475acf5cdb" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+        <activity android:name=".managemoney.pager.TendWebPager" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.RecentDealActivity"
+            android:label="@string/title_activity_recent_deal" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.MoneyRecordActivity"
+            android:label="@string/title_activity_money_record" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.InvestmentProjectActivity"
+            android:label="@string/title_activity_investment_project" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.PayWebViewActivity"
+            android:label="@string/title_activity_pay_web_view" >
+        </activity>
+        <activity
+            android:name=".activity.personalcenter.GetMoneyWebviewActivity"
+            android:label="@string/title_activity_get_money_webview" >
+        </activity>
+
+        <!-- shareSDK分享activity -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 易信分享回调 -->
+        <activity
+            android:name=".yxapi.YXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name=".activity.NoticConsult.ShowImage" >
+        </activity>
+        <activity
+            android:name="com.rongdai.managemoney.pager.GalleryImageActivity"
+            android:label="@string/title_activity_gallery_image" >
+        </activity>
+    </application>
+
+</manifest>

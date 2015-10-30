@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_250PX"
+        android:layout_marginTop="10dp"
+        android:background="@color/green"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_58PX"
+                android:layout_marginTop="@dimen/DIMEN_30PX"
+                android:text="可用余额"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_32PX" />
+
+            <TextView
+                android:id="@+id/tender_can_use_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/DIMEN_44PX"
+                android:layout_marginLeft="@dimen/DIMEN_58PX"
+                android:text="￥ 0.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/DIMEN_58PX" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2" >
+
+            <Button
+                android:id="@+id/tender_but_recharge"
+                android:layout_marginRight="@dimen/DIMEN_20PX"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/recharge_selector"
+                android:text="充值"
+                android:textSize="@dimen/DIMEN_28PX"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+	<EditText
+	    android:inputType="numberDecimal"
+	    android:paddingLeft="@dimen/DIMEN_20PX"
+	    android:id="@+id/tender_money" 
+	    android:layout_marginTop="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/DIMEN_100PX"
+	    android:hint="请输入投标金额"
+	    android:textSize="@dimen/DIMEN_32PX"
+	    android:textColor="@color/want_loan"
+	    />
+	
+	<TextView 
+	    android:layout_marginRight="@dimen/DIMEN_20PX"
+	    android:id="@+id/small_money"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="最低投资金额为100元"
+	    android:textSize="@dimen/DIMEN_32PX"
+	    android:textColor="@color/want_loan"
+	    android:layout_marginLeft="@dimen/DIMEN_20PX"
+	    android:layout_marginTop="5dp"
+	    />
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="*投标金额需保留两位小数，例: 15.00"
+	    android:textSize="@dimen/DIMEN_32PX"
+	    android:textColor="@color/want_loan"
+	    android:layout_marginLeft="@dimen/DIMEN_20PX"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    />
+	
+	<Button 
+	    android:id="@+id/tender_confirm"
+	    android:layout_marginLeft="@dimen/DIMEN_20PX"
+	    android:layout_marginRight="@dimen/DIMEN_20PX"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/DIMEN_90PX"
+	    android:background="@drawable/enable_loan_selector"
+	    android:text="@string/qrtb"
+	    android:textColor="@color/white"
+	    android:textSize="@dimen/DIMEN_30PX"
+	    />
+	
+</LinearLayout>

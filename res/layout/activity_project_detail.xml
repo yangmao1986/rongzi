@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <com.rongdai.view.PullToRefreshView
+        android:id="@+id/pull_refresh_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <include layout="@layout/manage_money_recommend_item" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@drawable/other_project_line" />
+
+                <RadioGroup
+                    android:id="@+id/project_detail_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp" >
+
+                    <RadioButton
+                        android:id="@+id/project_detail_info"
+                        style="@style/project_detail_button"
+                        android:background="@android:color/transparent"
+                        android:text="@string/xmxx" />
+
+                    <RadioButton
+                        android:id="@+id/project_detail_mode"
+                        style="@style/project_detail_button"
+                        android:background="@android:color/transparent"
+                        android:text="@string/hkmx" />
+
+                    <RadioButton
+                        android:id="@+id/project_detail_data"
+                        style="@style/project_detail_button"
+                        android:background="@android:color/transparent"
+                        android:text="@string/xgzl" />
+
+                    <RadioButton
+                        android:id="@+id/project_detail_case"
+                        style="@style/project_detail_button"
+                        android:background="@android:color/transparent"
+                        android:text="@string/tbqk" />
+                </RadioGroup>
+
+                <FrameLayout
+                    android:id="@+id/project_detail_fl"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </ScrollView>
+    </com.rongdai.view.PullToRefreshView>
+
+    <include layout="@layout/project_detail_bottom" />
+
+</LinearLayout>

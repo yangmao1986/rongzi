@@ -1,0 +1,278 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:background="#FF8500"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:id="@+id/setting_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"              
+                android:background="@drawable/back_button_selector"
+                android:onClick="ture"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_logo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/DIMEN_38PX" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+        
+        </RelativeLayout>
+    </LinearLayout>
+    
+    
+   
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/background_penson"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="20dp"
+       >
+       
+       
+       <RelativeLayout 
+           android:id="@+id/feedback"
+           android:layout_width="fill_parent"
+           android:layout_height="@dimen/DIMEN_90PX"
+           android:paddingLeft="20px"
+           android:paddingRight="20px"
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="意见反馈"
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true"
+               />
+           
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/arrow"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               />
+           
+       </RelativeLayout>
+       
+          <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@drawable/line_vertical"
+
+       />
+          
+              <RelativeLayout 
+                  android:id="@+id/aboutus_relativeLayout"
+           android:layout_width="fill_parent"
+           android:layout_height="@dimen/DIMEN_90PX"
+           android:paddingLeft="20px"
+           android:paddingRight="20px"
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="关于我们"
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:layout_alignParentLeft="true"
+                              android:layout_centerVertical="true"
+               />
+           
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/arrow"
+               android:layout_alignParentRight="true"
+                              android:layout_centerVertical="true"
+               />
+           
+       </RelativeLayout>
+       
+          <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@drawable/line_vertical"
+
+       />
+              <RelativeLayout 
+                  android:id="@+id/phonecall"
+           android:layout_width="fill_parent"
+           android:layout_height="@dimen/DIMEN_90PX"
+           android:paddingLeft="20px"
+           android:paddingRight="20px"
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="理财热线"
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:layout_alignParentLeft="true"
+                              android:layout_centerVertical="true"
+               />
+           
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/arrow"
+               android:layout_alignParentRight="true"
+                              android:layout_centerVertical="true"
+               />
+           
+       </RelativeLayout>
+       
+          <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@drawable/line_vertical"
+
+       />
+      
+      
+   </LinearLayout>
+   
+    
+    
+    
+   
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/background_penson"
+       android:layout_marginBottom="20dp"
+       >
+       
+       
+       <RelativeLayout 
+           android:id="@+id/clearcache"
+           android:layout_width="fill_parent"
+           android:layout_height="@dimen/DIMEN_90PX"
+           android:paddingLeft="20px"
+           android:paddingRight="20px"
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="清除缓存"
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:layout_alignParentLeft="true"
+                              android:layout_centerVertical="true"
+               />
+           
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/arrow"
+               android:layout_alignParentRight="true"
+                              android:layout_centerVertical="true"
+               />
+           
+       </RelativeLayout>
+       
+          <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@drawable/line_vertical"
+
+       />
+          
+              <RelativeLayout 
+                  android:id="@+id/updata_version"
+           android:layout_width="fill_parent"
+           android:layout_height="@dimen/DIMEN_90PX"
+           android:paddingLeft="20px"
+           android:paddingRight="20px"
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="检测更新"
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:layout_alignParentLeft="true"
+                              android:layout_centerVertical="true"
+               />
+           
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/arrow"
+               android:layout_alignParentRight="true"
+                              android:layout_centerVertical="true"
+               />
+           
+       </RelativeLayout>
+       
+          <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@drawable/line_vertical"
+
+       />
+      
+      
+   </LinearLayout>
+   
+   
+   <Button 
+       android:id="@+id/quitback_button"
+       android:layout_width="@dimen/DIMEN_680PX"
+       android:layout_height="@dimen/DIMEN_90PX"
+       android:text="退出登录"
+       android:textSize="@dimen/DIMEN_34PX"
+       android:textColor="#ffffff"
+       android:background="@drawable/backlogin_button_selector"
+       android:layout_gravity="center"
+       
+       />
+   
+    
+    
+    
+
+</LinearLayout>

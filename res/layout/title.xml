@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/DIMEN_100PX"
+    android:background="@color/biao_money"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+             android:clickable="true"
+            android:focusable="true"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/ib_back"
+            android:layout_width="@dimen/DIMEN_60PX"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back_button_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="贷款信息填写"
+            android:textColor="@color/white"
+            android:textSize="@dimen/DIMEN_45PX" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/ib_service"
+            android:layout_width="@dimen/DIMEN_60PX"
+            android:layout_height="@dimen/DIMEN_60PX"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/service_selector"
+            android:visibility="gone" 
+            />
+    </RelativeLayout>
+</LinearLayout>

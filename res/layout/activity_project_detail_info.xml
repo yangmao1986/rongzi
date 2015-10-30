@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/fengexian_xiangmuxinxi" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:text="@string/jbxx"
+                android:textColor="@color/loan_title"
+                android:textSize="@dimen/DIMEN_38PX" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:text="@string/jklx" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_loan"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="@string/xb" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_sex"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:text="年       龄"
+                     />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_age"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="婚姻状况" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_married"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:text="文化程度" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_culture"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="户籍" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_family"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:layout_marginTop="10dp"
+                android:text="借款描述"
+                android:textColor="@color/want_loan"
+                android:textSize="@dimen/DIMEN_30PX" />
+
+            <TextView
+                android:id="@+id/project_detail_info_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:layout_marginRight="10dp"
+                android:minLines="3"
+                android:singleLine="false"
+                android:textColor="@color/loan_title"
+                android:textSize="@dimen/DIMEN_30PX" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/DIMEN_22PX"
+                android:layout_marginTop="10dp"
+                android:text="个人资料"
+                android:textColor="@color/loan_title"
+                android:textSize="@dimen/DIMEN_38PX" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:text="工作年限" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_worktime"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="商业保险" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_insurance"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:text="职        业" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_work"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="社保年限" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_time"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="11"
+                    android:text="职        称" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_job_title"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="39"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:text="房        产" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_house"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                    />
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="长期居住地" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_local"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="11"
+                    android:text="年  收  入" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_income"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="39"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:text="贷款记录" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_record"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                     />
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="信用卡额度" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_blue_card"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="11"
+                    android:text="征信报告" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_report"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="39"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/DIMEN_22PX"
+                android:layout_marginTop="10dp"
+                android:text="历史资料"
+                android:textColor="@color/loan_title"
+                android:textSize="@dimen/DIMEN_38PX" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:text="成功借入" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_success"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="3"
+                     />
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="已还款数" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_repayment"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:text="待还款数" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_repayment_number"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="3"
+                    />
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="逾期未还" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_no_get"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/DIMEN_22PX"
+                android:layout_marginTop="10dp"
+                android:text="项目信息"
+                android:textColor="@color/loan_title"
+                android:textSize="@dimen/DIMEN_38PX" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="11"
+                    android:text="项目名称" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_project_name"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="39"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="175"
+                    android:text="本期融资金额" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_time_money"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="100"
+                     />
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="175"
+                    android:gravity="right"
+                    android:text="最高授信额度" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_reputation"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="100"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:text="还款日期" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_get_time"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="3"
+                     />
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="2"
+                    android:gravity="right"
+                    android:text="年化利率" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_lixi"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="2"
+                     />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="11"
+                    android:text="资金用途" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_yongtu"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="39"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/DIMEN_22PX"
+                android:paddingRight="@dimen/DIMEN_22PX"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    style="@style/project_detail_info_defult_font"
+                    android:layout_weight="10"
+                    android:text="投标截止时间" />
+
+                <View style="@style/project_detail_info_short_view" />
+
+                <TextView
+                    android:id="@+id/project_detail_info_stop_time"
+                    style="@style/project_detail_info_write_font"
+                    android:layout_weight="22"
+                     />
+            </LinearLayout>
+
+         <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" />
+
+   <!--             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/DIMEN_22PX"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/loan_title"
+                android:textSize="@dimen/DIMEN_38PX" />
+            <TextView
+                android:id="@+id/project_detail_info_company_case"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:singleLine="false"
+                android:textColor="@color/loan_title" />
+
+         <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="@color/want_loan" /> -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

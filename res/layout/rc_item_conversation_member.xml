@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rc_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <io.rong.imkit.view.AsyncImageView
+        android:id="@android:id/icon"
+        app:defDrawable="@drawable/rc_default_portrait"
+        app:shape="square"
+        android:layout_width="@dimen/DIMEN_112PX"
+        android:layout_height="@dimen/DIMEN_112PX"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/DIMEN_15PX"
+        android:layout_marginTop="@dimen/DIMEN_15PX"
+        android:contentDescription="@string/content_description" />
+
+    <TextView
+        android:id="@android:id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@android:id/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/default_name"
+        android:textColor="#252525"
+        android:textSize="@dimen/DIMEN_30PX"></TextView>
+
+    <ImageView
+        android:id="@android:id/icon1"
+        android:layout_width="@dimen/DIMEN_45PX"
+        android:layout_height="@dimen/DIMEN_45PX"
+        android:contentDescription="@string/content_description"
+        android:padding="@dimen/DIMEN_5PX"
+        android:src="@drawable/rc_mebmer_delete" />
+
+</RelativeLayout>

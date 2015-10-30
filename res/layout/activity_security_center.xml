@@ -1,0 +1,340 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+        android:background="#f6f6f6"
+    tools:context="${relativePackage}.${activityClass}" >
+
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:background="#FF8500"
+>
+
+            <ImageButton
+                android:id="@+id/securitycenter_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"              
+                android:background="@drawable/back_button_selector"
+                android:onClick="ture"
+                android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_logo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="安全中心"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/DIMEN_36PX"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                 />
+       
+
+   
+    </RelativeLayout>
+    
+     
+   
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/background_penson"
+       android:layout_marginTop="@dimen/DIMEN_30PX"
+
+       >
+       
+       
+       <RelativeLayout 
+           android:id="@+id/real_name_certification"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/DIMEN_20PX"
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="实名认证"
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:layout_alignParentLeft="true"
+               android:layout_centerVertical="true"
+               />
+           
+           <ImageView 
+               android:id="@+id/security_center_arrow1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+               />
+              <!--  android:src="@drawable/arrow" -->
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="已认证"
+               android:textColor="#BEBEBE"
+               android:textSize="@dimen/DIMEN_28PX"
+               android:layout_toLeftOf="@id/security_center_arrow1"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="@dimen/DIMEN_20PX"
+               
+               />
+           
+       </RelativeLayout>
+       
+          <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@drawable/line_vertical"
+
+       />
+          
+              <RelativeLayout 
+                  android:id="@+id/binding_phone_number_back_relativelayout"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/DIMEN_20PX"
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="绑定手机"
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+               />
+           
+           <ImageView 
+               android:id="@+id/security_center_arrow2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+               />
+              <!--  android:src="@drawable/arrow" -->
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="已绑定"
+               android:textColor="#BEBEBE"
+               android:textSize="@dimen/DIMEN_28PX"
+               android:layout_toLeftOf="@id/security_center_arrow2"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="@dimen/DIMEN_20PX"
+               
+               />
+           
+       </RelativeLayout>
+       
+          <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@drawable/line_vertical"
+
+       />
+      
+      
+   </LinearLayout>
+   
+ 
+   
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/background_penson"
+       android:layout_marginTop="@dimen/DIMEN_30PX"
+
+       >
+       
+       
+       <RelativeLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/DIMEN_20PX"
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="汇付天下"
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+               />
+           
+           <ImageView 
+               android:id="@+id/security_center_arrow3"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+               />
+             <!--   android:src="@drawable/arrow" -->
+           
+            <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="已开通"
+               android:textColor="#BEBEBE"
+               android:textSize="@dimen/DIMEN_28PX"
+               android:layout_toLeftOf="@id/security_center_arrow3"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="@dimen/DIMEN_20PX"
+               
+               />
+           
+       </RelativeLayout>
+       
+          <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@drawable/line_vertical"
+
+       />
+          
+              <RelativeLayout
+                  android:id="@+id/mybankcard_relativelayout" 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/DIMEN_20PX"
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="我的银行卡"
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+               />
+           
+           <ImageView 
+               android:id="@+id/security_center_arrow4"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+               />
+             <!--   android:src="@drawable/arrow" -->
+               <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="未绑定"
+               android:textColor="#BEBEBE"
+               android:textSize="@dimen/DIMEN_28PX"
+               android:layout_toLeftOf="@id/security_center_arrow4"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="@dimen/DIMEN_20PX"
+               
+               />
+           
+       </RelativeLayout>
+       
+          <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@drawable/line_vertical"
+
+       />
+      
+      
+   </LinearLayout>
+   
+    
+   
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/background_penson"
+       android:layout_marginTop="@dimen/DIMEN_30PX"
+
+       >
+       
+       
+       <RelativeLayout 
+           android:id="@+id/editpassword_relativelayout"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/DIMEN_20PX"
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="修改登录密码"
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+               />
+           
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/arrow"
+               android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+               />
+           
+       </RelativeLayout>
+       
+          <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@drawable/line_vertical"
+
+       />
+          
+              <!-- <RelativeLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/DIMEN_20PX"
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="修改手势密码"
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+               />
+           
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/arrow"
+               android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+               />
+           
+       </RelativeLayout>
+       
+          <View 
+       android:layout_width="fill_parent"
+       android:layout_height="1dp"
+       android:background="@drawable/line_vertical"
+
+       /> -->
+      
+      
+   </LinearLayout>
+   
+   
+</LinearLayout>

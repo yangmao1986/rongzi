@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/DIMEN_22PX"
+    android:background="#EBEBEB"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/conversation_message_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/DIMEN_20PX"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:background="#d3d3d3"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/DIMEN_10PX"
+        android:paddingLeft="@dimen/DIMEN_20PX"
+        android:paddingRight="@dimen/DIMEN_20PX"
+        android:paddingTop="@dimen/DIMEN_10PX"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:visibility="visible"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<View-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@android:color/transparent"></View>-->
+
+    <TextView
+        android:id="@+id/conversation_unknown_message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/DIMEN_20PX"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:background="#d3d3d3"
+        android:gravity="center"
+        android:paddingBottom="@dimen/DIMEN_10PX"
+        android:paddingLeft="@dimen/DIMEN_20PX"
+        android:paddingRight="@dimen/DIMEN_20PX"
+        android:paddingTop="@dimen/DIMEN_10PX"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/DIMEN_25PX"
+        android:text="未知消息"/>
+
+    <!--<View-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@android:color/transparent"></View>-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

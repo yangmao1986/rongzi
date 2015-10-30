@@ -1,0 +1,216 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 底部的RadioButton的样式 -->
+    <style name="bottom_style">
+        <item name="android:textColor">@drawable/text_color_selector</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textSize">@dimen/DIMEN_22PX</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/bottom_bg_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 理财中心的RadioButton的样式 -->
+    <style name="manage_money_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#303030</item>
+        <item name="android:textSize">@dimen/DIMEN_32PX</item>
+    </style>
+
+    <!-- <item name="android:layout_margin">5dp</item> -->
+    <!-- 投标的button描述样式 -->
+    <style name="listview_item_button_style">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:textSize">@dimen/DIMEN_22PX</item>
+    </style>
+
+    <!-- 我要贷款中的适应区域等样式 -->
+    <style name="want_loan">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/DIMEN_30PX</item>
+        <item name="android:textColor">@color/want_loan</item>
+    </style>
+
+    <!-- 贷款信息填写的联系人等样式 -->
+    <style name="loan_info">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/want_loan</item>
+        <item name="android:textSize">@dimen/DIMEN_34PX</item>
+        <item name="android:layout_marginLeft">2dp</item>
+    </style>
+
+    <!-- 贷款信息填写分隔线样式 -->
+    <style name="loan_info_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">@drawable/write_info_line</item>
+        <item name="android:layout_marginRight">7dp</item>
+    </style>
+
+    <!-- 贷款信息必填图片的样式 -->
+    <style name="loan_info_must_write">
+        <item name="android:layout_width">@dimen/DIMEN_18PX</item>
+        <item name="android:layout_height">@dimen/DIMEN_18PX</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:src">@drawable/must_write</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!-- 贷款信息用户填写的字体样式 -->
+    <style name="loan_info_user_write">
+        <item name="android:layout_marginLeft">7dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/DIMEN_34PX</item>
+        <item name="android:textColor">@color/loan_title</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!-- 贷款信息每个条目的样式 -->
+    <style name="loan_info_ll">
+        <item name="android:paddingLeft">@dimen/DIMEN_22PX</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 项目详情中radiobutton的样式 -->
+    <style name="project_detail_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/DIMEN_32PX</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/radiobutton_selector</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <!-- 项目详情中项目信息的默认字体的样式 -->
+    <style name="project_detail_info_defult_font">
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/want_loan</item>
+        <item name="android:textSize">@dimen/DIMEN_30PX</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 项目详情中项目信息的显示字体的样式 -->
+    <style name="project_detail_info_write_font">
+
+        <!-- <item name="android:paddingRight">10dp</item> -->
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/loan_title</item>
+        <item name="android:textSize">@dimen/DIMEN_30PX</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 项目详情中项目信息竖着View的样式 -->
+    <style name="project_detail_info_short_view">
+        <item name="android:layout_width">0.1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/want_loan</item>
+    </style>
+    <!-- 自定义对话框的样式 -->
+    <style name="mydialogstyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 项目详情中相关资料身份证等字体的样式 -->
+    <style name="related">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">@dimen/DIMEN_22PX</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/loan_title</item>
+        <item name="android:textSize">@dimen/DIMEN_34PX</item>
+    </style>
+
+    <!-- 项目详情中相关资料包裹每个imageview的样式 -->
+    <style name="related_relativeLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 项目详情中相关资料包裹三个imageview的样式 -->
+    <style name="related_linearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/related_info</item>
+    </style>
+
+    <!-- 项目详情中相关资料imageview下的字体样式 -->
+    <style name="related_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/want_loan</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">@dimen/DIMEN_32PX</item>
+    </style>
+
+    <!-- 贷款信息填写的radionbutton样式 -->
+    <style name="loan_info_radiobutton">
+        <item name="android:textColor">@color/loan_title</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/danbao_selector</item>
+        <item name="android:drawablePadding">5dp</item>
+    </style>
+
+     <style name="ProgressBarBig">
+        <item name="android:indeterminateDrawable">@drawable/progress_big</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+    </style>
+</resources>

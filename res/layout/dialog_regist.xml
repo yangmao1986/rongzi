@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/DIMEN_40PX"
+        android:layout_marginTop="@dimen/DIMEN_40PX"
+        android:lineSpacingExtra="@dimen/DIMEN_5PX"
+        android:paddingLeft="@dimen/DIMEN_20PX"
+        android:paddingRight="@dimen/DIMEN_20PX"
+        android:text="    亲！恭喜您成功注册了融投贷！您需要开通第三方资金托管账户-“汇付天下”才能进行投资理财哦！赶快去开通吧！钱进的路上等着你哦，么么哒~~~"
+        android:textColor="#303030"
+        android:textSize="@dimen/DIMEN_30PX" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:layout_marginBottom="@dimen/DIMEN_35PX"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/openlater"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/DIMEN_20PX"
+            android:layout_marginRight="@dimen/DIMEN_20PX"
+            android:layout_weight="1"
+            android:background="@drawable/regist_openlater_bg"
+            android:text="稍后再说" />
+
+        <Button
+            android:id="@+id/goopen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/DIMEN_20PX"
+            android:layout_marginLeft="@dimen/DIMEN_20PX"
+            android:layout_weight="1"
+            android:background="@drawable/regist_goopen_bg"
+            android:text="去开通" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.rongdai.view.MyViewPager
+        android:id="@+id/manager_money_vp"
+        android:layout_width="@dimen/DIMEN_720PX"
+        android:layout_height="@dimen/DIMEN_288PX" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recommend_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/DIMEN_32PX"
+                android:layout_height="@dimen/DIMEN_32PX"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/recommend_time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="@string/next_begin_time"
+                android:textColor="@color/next_begin_time_color"
+                android:textSize="@dimen/DIMEN_30PX" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_70PX"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/manager_money_show_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DIMEN_20PX"
+                    android:text="01:20:34"
+                    android:textColor="@color/time_color"
+                    android:textSize="@dimen/DIMEN_40PX" />
+
+                <!-- android:layout_weight="1" -->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                >
+
+                <Button
+                    android:id="@+id/manager_money_notify_time"
+                    android:layout_width="@dimen/DIMEN_200PX"
+                    android:layout_height="@dimen/DIMEN_70PX"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/DIMEN_20PX"
+                    android:background="@drawable/notify_time_selector"
+                    android:text="到时提醒"
+                    android:textColor="#209C00"
+                    android:textSize="@dimen/DIMEN_40PX" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

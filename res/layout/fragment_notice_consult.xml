@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/loading_page_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/rg_notice_consult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+
+            <RadioButton
+                android:id="@+id/notic_webnotic"
+                style="@style/manage_money_style"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/recommend_or_other_selector"
+                android:height="40dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="8dp"
+                android:text="网站公告" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5" />
+
+            <RadioButton
+                android:id="@+id/notic_consult"
+                style="@style/manage_money_style"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/recommend_or_other_selector"
+                android:height="40dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="8dp"
+                android:text="行业资讯" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </RadioGroup>
+
+        <!--
+        <RadioGroup
+            android:id="@+id/rg_notice_consult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/notic_webnotic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/recommend_or_other_selector"
+                android:text="网络公告"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/notic_consult"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="行业咨询"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/recommend_or_other_selector"
+                android:button="@null" />
+        </RadioGroup>
+        -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="1dp" />
+
+        <com.rongdai.view.PullToRefreshView
+            android:id="@+id/ptrv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lv_notice_consult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff" >
+            </ListView>
+        </com.rongdai.view.PullToRefreshView>
+    </LinearLayout>
+
+    <include layout="@layout/loading_page_empty" />
+
+    <include layout="@layout/loading_page_error" />
+
+    <include layout="@layout/loading_page_loading" />
+
+</FrameLayout>

@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:background="#FF8500"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_marginLeft="6dp"
+                android:layout_width="@dimen/DIMEN_157PX"
+                android:layout_height="@dimen/DIMEN_45PX"
+                android:background="@android:color/transparent"
+                android:src="@drawable/logo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_logo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="理财中心"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/DIMEN_45PX" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:visibility="gone"
+                android:clickable="true"
+                android:focusable="true"
+                android:id="@+id/main_service"
+                android:layout_width="@dimen/DIMEN_60PX"
+                android:layout_height="@dimen/DIMEN_60PX"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/service_selector" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.rongdai.view.NoScrollViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/main_rg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_120PX"
+        android:background="@drawable/bottom"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/manage_money_center"
+            style="@style/bottom_style"
+            android:drawableTop="@drawable/manager_money_selector"
+            android:text="@string/manager_money" />
+
+        <RadioButton
+            android:id="@+id/i_want_loan"
+            style="@style/bottom_style"
+            android:drawableTop="@drawable/want_loan_selector"
+            android:text="@string/want_loan" />
+
+        <RadioButton
+            android:id="@+id/notice_consult"
+            style="@style/bottom_style"
+            android:drawableTop="@drawable/notice_consult_selector"
+            android:text="@string/notice_consult" />
+
+        <RadioButton
+            android:id="@+id/person_center"
+            style="@style/bottom_style"
+            android:drawableTop="@drawable/person_center_selector"
+            android:text="@string/person_center" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/fengexian_xiangguanziliao" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/related"
+                android:text="认证信息" />
+            <com.rongdai.view.MyGrideView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:id="@+id/relater_information_gv"
+                ></com.rongdai.view.MyGrideView>
+            <!--
+            <HorizontalScrollView
+                android:id="@+id/identity_card_hsv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/related"
+                        android:text="身份证" />
+
+                    <LinearLayout
+                        android:id="@+id/identity_card_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:orientation="horizontal"
+                        >
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/danbao_hsv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/related"
+                        android:text="担保函" />
+
+                    <LinearLayout
+                        android:id="@+id/danbao_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:orientation="horizontal"
+                        >
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/yewu_data_hsv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/related"
+                        android:text="业务资料" />
+
+                    <LinearLayout
+                        android:id="@+id/yewu_data_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:orientation="horizontal"
+                        >
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/company_envirement_hsv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/related"
+                        android:text="企业环境" />
+
+                    <LinearLayout
+                        android:id="@+id/company_envirement_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" 
+                        android:orientation="horizontal"
+                        >
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>            -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/DIMEN_100PX"
+            android:background="#FF8500"
+            android:button="@null"
+            android:text="设置新密码"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/DIMEN_40PX" />
+
+        <ImageView
+            android:id="@+id/setnewpsw_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/DIMEN_10PX"
+            android:layout_marginTop="@dimen/DIMEN_5PX"
+            android:src="@drawable/login_back_bg" />
+    </RelativeLayout>
+
+    <!-- <EditText
+        android:id="@+id/setnewpsw_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:button="@null"
+        android:hint="请输入用户名"
+        android:paddingLeft="@dimen/DIMEN_20PX" /> -->
+    <EditText
+        android:id="@+id/setnewpsw_psw"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/DIMEN_20PX"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:button="@null"
+        android:hint="设置新密码"
+        android:paddingLeft="@dimen/DIMEN_20PX"
+        android:password="true"
+         />
+
+    <EditText
+        android:id="@+id/setnewpsw_repsw"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/DIMEN_2PX"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:button="@null"
+        android:hint="确认新密码"
+        android:paddingLeft="@dimen/DIMEN_20PX" 
+        android:password="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="请设置新密码"
+        android:textColor="#888888"
+        android:textSize="@dimen/DIMEN_30PX" />
+
+    <Button
+        android:id="@+id/setnewpsw_sure"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/DIMEN_20PX"
+        android:layout_marginRight="@dimen/DIMEN_20PX"
+        android:layout_weight="1"
+        android:background="@drawable/login_bg"
+        android:button="@null"
+        android:text="确定"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/DIMEN_40PX" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" />
+
+</LinearLayout>

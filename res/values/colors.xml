@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <color name="white">#ffffff</color>
+    
+    <color name="orange">#FF8500</color>
+    <!-- 下次开标的时间的字体颜色 -->
+    <color name="next_begin_time_color">#8c8c8c</color>
+
+    <!-- 显示时间的 -->
+    <color name="time_color">#23a700</color>
+
+    <!-- 贷款标题颜色 -->
+    <color name="loan_title">#303030</color>
+
+    <!-- 企业周转贷的颜色字体颜色 -->
+    <color name="business">#f54b4b</color>
+
+    <!-- 消费周转贷的字体颜色 -->
+    <color name="consume">#ff7e00</color>
+    
+    <!-- 定时表的字体颜色 -->
+    <color name="timing">#219c00</color>
+    
+    <!-- 消费周转贷的字体颜色 -->
+    <color name="dingxiang">#00799c</color>
+    
+    <!-- 显示标价格字体颜色 -->
+    <color name="biao_money">#ff8400</color>
+	
+    <!-- 我要贷款的字体颜色 -->
+    <color name="want_loan">#888888</color>
+    
+    <!-- 自定义圆圈的颜色 -->
+    <color name="cricle">#FF6600</color>
+    
+    <!-- 透明 -->
+    <color name="tm">#00ffffff</color>
+    
+    <!-- 绿色 -->
+    <color name="green">#30C368</color>
+    
+    <!-- 相关信息的背景颜色-->
+    <color name="related_info">#E6E6E6</color>
+</resources>

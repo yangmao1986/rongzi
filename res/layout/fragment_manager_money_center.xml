@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+<com.rongdai.view.PullToRefreshView
+    android:id="@+id/pull_refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:measureAllChildren="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+       
+
+        <RadioGroup
+            android:id="@+id/manager_money_recommend_rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+
+            <RadioButton
+                android:id="@+id/manager_money_recommend"
+                style="@style/manage_money_style"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/recommend_or_other_selector"
+                android:height="40dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="8dp"
+                android:text="推荐项目" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5" />
+
+            <RadioButton
+                android:id="@+id/manager_money_other"
+                style="@style/manage_money_style"
+                android:background="@android:color/transparent"
+                android:drawableBottom="@drawable/recommend_or_other_selector"
+                android:height="40dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="8dp"
+                android:text="其他项目" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/manager_money_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+         </LinearLayout>
+    </ScrollView>
+</com.rongdai.view.PullToRefreshView>
+</LinearLayout>

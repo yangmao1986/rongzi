@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:background="#FF8500"
+>
+
+            <ImageButton
+                android:id="@+id/binding_phone_number_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"              
+                android:background="@drawable/back_button_selector"
+                android:onClick="ture"
+                android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_logo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绑定手机号"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/DIMEN_36PX"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                 />
+       
+
+   
+    </RelativeLayout>
+    
+    
+   
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/background_penson"
+       android:layout_marginTop="@dimen/DIMEN_30PX"
+
+       >
+       
+       
+       <RelativeLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/DIMEN_20PX"
+           >
+           
+           <TextView 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:text=""
+               android:textSize="@dimen/DIMEN_30PX"
+               android:textColor="#303030"
+               android:background="#ffffff"
+               android:layout_alignParentLeft="true"
+               />
+           
+       
+         
+           
+       </RelativeLayout>
+       
+      
+          
+          
+          </LinearLayout>
+          
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_margin="@dimen/DIMEN_20PX"
+           
+           >
+           
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="为了您的账户安全绑定的手机号不能修改，如需修改请与客服联系。"
+               android:textColor="#888888"
+               android:textSize="@dimen/DIMEN_32PX"
+                            
+               />
+           
+
+           
+           
+       </LinearLayout>
+   
+
+</LinearLayout>

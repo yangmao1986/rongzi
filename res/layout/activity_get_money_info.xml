@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f6f6"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DIMEN_100PX"
+        android:background="#FF8500"
+>
+
+            <ImageButton
+                android:id="@+id/MyBankCard_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"              
+                android:background="@drawable/back_button_selector"
+                android:onClick="ture"
+                android:layout_alignParentLeft="true"
+                 android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/DIMEN_20PX"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_logo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提现细则"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/DIMEN_36PX"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                 />
+       
+
+   
+    </RelativeLayout>
+    
+    
+   
+   <LinearLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:background="@drawable/paydetailed_background"
+       android:layout_margin="@dimen/DIMEN_20PX"
+
+       >
+        
+       
+       <RelativeLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:padding="@dimen/DIMEN_20PX"
+           >
+           
+          <TextView 
+            android:id="@+id/paydetailed_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/DIMEN_20PX"
+            android:textColor="#303030"
+            android:textSize="@dimen/DIMEN_32PX"
+            
+            
+            />
+        
+       
+         
+           
+       </RelativeLayout>
+       
+       
+      
+       
+      
+          
+          
+          </LinearLayout>
+          
+      
+               
+   
+   
+
+</LinearLayout>
