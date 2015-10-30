@@ -104,7 +104,7 @@ public class MainActivity extends InstrumentedActivity implements
 	private int width;
 	public static Activity mainActivity;
 	SharedPreferences sp;
-
+	//yangmao 
 	/**
 	 * 检测登陆状态信息,认证状态信息,用户账号
 	 */
